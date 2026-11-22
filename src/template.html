@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manikya K Uppar | Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Manikya K Uppar, a Full-Stack Developer and Computer Science Engineering undergraduate (VTU, 2027) working with React.js, Node.js, Express.js, PostgreSQL and MongoDB.">
+<meta property="og:title" content="Manikya K Uppar | Full-Stack Developer">
+<meta property="og:description" content="Full-stack projects from first commit to live deployment: React, Node.js, Express, PostgreSQL, MongoDB.">
+<meta property="og:image" content="assets/img/profile.jpg">
+<meta name="theme-color" content="#0D1730">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D1730'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23C9C4EC' font-family='sans-serif' font-weight='700'%3EMU%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0D1730;--ink2:#15234A;--ivory:#F5F0E6;--ivory2:#EAE3D3;--lav:#8F86CC;--lav2:#C9C4EC;--sky:#A8CBEF;--on:#E9E6F5;--mute:#A9B2CF;--onl:#14213F;--mutel:#4A5470;--r:18px;
+--hd:"Bricolage Grotesque",system-ui,sans-serif;--bd:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font:400 17px/1.65 var(--bd);color:var(--on);background:var(--ink)}
+img{max-width:100%;display:block}a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ivory);color:var(--ink);padding:8px 14px;border-radius:8px;z-index:99}.skip:focus{left:8px}
+h1,h2,h3{font-family:var(--hd);line-height:1.12;margin:0}
+h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.02em;margin-bottom:.4em}
+h3{font-size:1.3rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.dark{background:var(--ink);color:var(--on)}.dark2{background:var(--ink2);color:var(--on)}
+.light{background:var(--ivory);color:var(--onl)}.light .mute{color:var(--mutel)}.dark .mute,.dark2 .mute{color:var(--mute)}
+.lead{max-width:62ch}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,23,48,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,196,236,.14)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 1.15rem var(--hd);text-decoration:none;color:var(--lav2)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav ul a{text-decoration:none;color:var(--mute)}nav ul a:hover{color:var(--on)}
+#menu{display:none;background:none;border:1px solid var(--lav);color:var(--on);border-radius:10px;padding:8px 12px;font:inherit}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:var(--bd);font-size:1rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.pri{background:var(--lav2);color:var(--ink)}.pri:hover{background:#fff}
+.sec{border-color:var(--lav);color:var(--on);background:transparent}
+.light .sec{border-color:var(--ink);color:var(--ink)}.light .pri{background:var(--ink);color:var(--ivory)}
+.hero{padding:72px 0 96px;background:radial-gradient(900px 500px at 85% 10%,rgba(143,134,204,.28),transparent 60%),var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.5vw,5rem);letter-spacing:-.03em}
+.hero .hl{font:500 clamp(1.05rem,2vw,1.35rem) var(--hd);color:var(--sky);margin:18px 0 14px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+.soc{display:flex;gap:18px;font-weight:500}.soc a{color:var(--lav2)}
+.arch{position:relative;max-width:360px;justify-self:center}
+.arch::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:2px solid var(--sky);border-radius:999px 999px 26px 26px;opacity:.7}
+.arch img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 26px 26px;background:var(--ink2)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.edu{border-left:3px solid var(--lav);padding:2px 0 2px 18px;margin-bottom:22px}
+.edu b{display:block;font:700 1.1rem var(--hd)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.chips li{padding:5px 13px;border-radius:999px;font-size:.9rem;border:1px solid rgba(201,196,236,.4);background:rgba(201,196,236,.08)}
+.light .chips li{border-color:rgba(20,33,63,.25);background:rgba(143,134,204,.14)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px 48px;margin-top:36px}
+.skills h3{font-size:1.05rem;color:var(--lav2);margin-bottom:4px}
+.feat{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:48px}
+.feat:nth-child(even) .shot{order:2}
+.shot{border-radius:var(--r);overflow:hidden;background:var(--ink);border:1px solid rgba(20,33,63,.15);aspect-ratio:21/10}
+.shot img{width:100%;height:100%;object-fit:cover}
+.ph{height:100%;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:22px;background:linear-gradient(135deg,var(--ink),var(--ink2));color:var(--on);font-size:.92rem}
+.ph b{font:700 2.6rem var(--hd);color:var(--sky)}.ph span{color:var(--lav2)}
+.kind{font-weight:600;font-size:.9rem;color:var(--lav)}
+.light .kind{color:#5E54A8}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.links .btn{padding:9px 18px;font-size:.95rem}
+.group{margin:56px 0 18px;font-size:1.4rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid rgba(20,33,63,.12);display:flex;flex-direction:column}
+.card .shot{border:0;border-radius:0}
+.card .in{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .links{margin-top:auto;padding-top:10px}
+.tl{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:18px}
+.tl li{padding:20px 22px;border-radius:var(--r);background:rgba(201,196,236,.07);border:1px solid rgba(201,196,236,.16)}
+.tl .kind{color:var(--sky)}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin-top:32px}
+.cert{background:var(--ink2);border-radius:var(--r);overflow:hidden;border:1px solid rgba(201,196,236,.16);display:flex;flex-direction:column}
+.cert img{aspect-ratio:4/3;width:100%;object-fit:cover;background:#fff}
+.cert div{padding:16px;display:flex;flex-direction:column;gap:4px;flex:1}.cert a{margin-top:auto;color:var(--sky);font-weight:600}
+.cert h3{font-size:1.02rem}.cert small{color:var(--mute)}
+dialog{width:min(920px,94vw);max-height:92vh;border:0;border-radius:22px;padding:0;background:var(--ivory);color:var(--onl)}
+dialog::backdrop{background:rgba(13,23,48,.75)}
+.dg{padding:32px}.dg h4{margin:22px 0 6px;font:700 1.05rem var(--hd)}
+.dg ul{margin:0;padding-left:20px}.x{float:right}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px}
+.gal img{border-radius:12px;border:1px solid rgba(20,33,63,.15);cursor:zoom-in}
+.met{display:flex;gap:16px;align-items:center;background:var(--ink);color:var(--on);padding:16px 20px;border-radius:14px;margin-top:14px}
+.met b{font:700 2.4rem var(--hd);color:var(--sky)}
+.pipe{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0;counter-reset:s}
+.pipe li{padding:8px 12px;border-radius:10px;background:rgba(143,134,204,.18);font-size:.9rem}
+.pipe li+li::before{content:"\2192\00a0"}
+#pv{width:100%;height:560px;border:1px solid rgba(20,33,63,.2);border-radius:var(--r);background:#fff;margin-top:20px}
+footer{padding:36px 0;background:var(--ink);color:var(--mute);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+#top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:0;background:var(--lav2);color:var(--ink);font-size:1.2rem;cursor:pointer;display:none}
+@media(max-width:860px){section{padding:64px 0}.hero .wrap,.grid2,.feat{grid-template-columns:1fr}.feat:nth-child(even) .shot{order:0}.arch{max-width:260px;order:-1}
+#menu{display:block}nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--ink);padding:16px 24px;gap:14px}nav ul.open{display:flex}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Main"><div class="wrap"><a class="logo" href="#home">Manikya K Uppar</a>
+<button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<ul id="nav"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<main id="main">
+<header class="hero" id="home"><div class="wrap">
+<div><h1>{{NAME}}</h1><p class="hl">{{HEADLINE}}</p><p class="lead mute">{{INTRO}}</p>
+<div class="cta"><a class="btn pri" href="#projects">View my projects</a><a class="btn sec" href="{{RESUME}}" download>Download resume</a><a class="btn sec" id="ct" href="#contact">Contact me</a></div>
+<div class="soc">{{SOC}}</div></div>
+<div class="arch"><img src="assets/img/profile.jpg" alt="Portrait of Manikya K Uppar in a black blazer and white shirt" width="900" height="900" fetchpriority="high"></div>
+</div></header>
+
+<section class="light" id="about"><div class="wrap grid2">
+<div><h2>About</h2><p class="lead">{{ABOUT}}</p><p class="mute">Languages: {{LANG}}</p></div>
+<div id="education"><h2>Education</h2>{{EDU}}</div></div></section>
+
+<section class="dark" id="skills"><div class="wrap"><h2>Technical skills</h2><p class="mute lead">Technologies from my resume, grouped by area.</p><div class="skills">{{SKILLS}}</div></div></section>
+
+<section class="light" id="projects"><div class="wrap"><h2>Featured projects</h2><p class="mute lead">Two end-to-end builds I developed on my own, both deployed.</p><div id="fp">{{FEATURED}}</div>
+<h2 class="group" style="margin-top:72px">Complete project portfolio</h2><div class="cards">{{ALL}}</div></div></section>
+
+<section class="dark2" id="experience"><div class="wrap"><h2>Experience and training</h2><p class="mute lead">Virtual job simulations, a hackathon and student leadership. No employment is claimed here.</p><ul class="tl">{{EXP}}</ul></div></section>
+
+<section class="dark" id="certifications"><div class="wrap"><h2>Certifications</h2><p class="mute">Open any certificate to see the original file.</p><div class="certs">{{CERTS}}</div></div></section>
+
+<section class="light" id="resume"><div class="wrap"><h2>Resume</h2><p class="mute lead">A one-page PDF with my education, skills, projects and experience.</p>
+<div class="links"><a class="btn pri" href="{{RESUME}}" download>Download resume (PDF)</a><button class="btn sec" id="pvb" aria-expanded="false">Preview</button></div><iframe id="pv" title="Resume preview" data-src="{{RESUME}}" hidden></iframe></div></section>
+
+<section class="dark2" id="contact"><div class="wrap"><h2>Contact</h2><p class="lead">I am looking for Full-Stack Developer and Software Engineer roles. The quickest way to reach me is email.</p>
+<div class="cta"><a class="btn pri" href="mailto:{{EMAIL}}">{{EMAIL}}</a><a class="btn sec" href="{{GITHUB}}" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="{{LINKEDIN}}" target="_blank" rel="noopener">LinkedIn</a></div><p class="mute">{{LOC}}</p></div></section>
+</main>
+<footer><div class="wrap"><span>&copy; {{YEAR}} {{NAME}}</span><span>{{FOOT}}</span></div></footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+{{DIALOGS}}
+<script src="assets/site.js" defer></script>
+</body>
+</html>

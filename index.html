@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manikya K Uppar | Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Manikya K Uppar, a Full-Stack Developer and Computer Science Engineering undergraduate (VTU, 2027) working with React.js, Node.js, Express.js, PostgreSQL and MongoDB.">
+<meta property="og:title" content="Manikya K Uppar | Full-Stack Developer">
+<meta property="og:description" content="Full-stack projects from first commit to live deployment: React, Node.js, Express, PostgreSQL, MongoDB.">
+<meta property="og:image" content="assets/img/profile.jpg">
+<meta name="theme-color" content="#0D1730">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D1730'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23C9C4EC' font-family='sans-serif' font-weight='700'%3EMU%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0D1730;--ink2:#15234A;--ivory:#F5F0E6;--ivory2:#EAE3D3;--lav:#8F86CC;--lav2:#C9C4EC;--sky:#A8CBEF;--on:#E9E6F5;--mute:#A9B2CF;--onl:#14213F;--mutel:#4A5470;--r:18px;
+--hd:"Bricolage Grotesque",system-ui,sans-serif;--bd:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font:400 17px/1.65 var(--bd);color:var(--on);background:var(--ink)}
+img{max-width:100%;display:block}a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ivory);color:var(--ink);padding:8px 14px;border-radius:8px;z-index:99}.skip:focus{left:8px}
+h1,h2,h3{font-family:var(--hd);line-height:1.12;margin:0}
+h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.02em;margin-bottom:.4em}
+h3{font-size:1.3rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.dark{background:var(--ink);color:var(--on)}.dark2{background:var(--ink2);color:var(--on)}
+.light{background:var(--ivory);color:var(--onl)}.light .mute{color:var(--mutel)}.dark .mute,.dark2 .mute{color:var(--mute)}
+.lead{max-width:62ch}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,23,48,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,196,236,.14)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 1.15rem var(--hd);text-decoration:none;color:var(--lav2)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav ul a{text-decoration:none;color:var(--mute)}nav ul a:hover{color:var(--on)}
+#menu{display:none;background:none;border:1px solid var(--lav);color:var(--on);border-radius:10px;padding:8px 12px;font:inherit}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:var(--bd);font-size:1rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.pri{background:var(--lav2);color:var(--ink)}.pri:hover{background:#fff}
+.sec{border-color:var(--lav);color:var(--on);background:transparent}
+.light .sec{border-color:var(--ink);color:var(--ink)}.light .pri{background:var(--ink);color:var(--ivory)}
+.hero{padding:72px 0 96px;background:radial-gradient(900px 500px at 85% 10%,rgba(143,134,204,.28),transparent 60%),var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.5vw,5rem);letter-spacing:-.03em}
+.hero .hl{font:500 clamp(1.05rem,2vw,1.35rem) var(--hd);color:var(--sky);margin:18px 0 14px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+.soc{display:flex;gap:18px;font-weight:500}.soc a{color:var(--lav2)}
+.arch{position:relative;max-width:360px;justify-self:center}
+.arch::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:2px solid var(--sky);border-radius:999px 999px 26px 26px;opacity:.7}
+.arch img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 26px 26px;background:var(--ink2)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.edu{border-left:3px solid var(--lav);padding:2px 0 2px 18px;margin-bottom:22px}
+.edu b{display:block;font:700 1.1rem var(--hd)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.chips li{padding:5px 13px;border-radius:999px;font-size:.9rem;border:1px solid rgba(201,196,236,.4);background:rgba(201,196,236,.08)}
+.light .chips li{border-color:rgba(20,33,63,.25);background:rgba(143,134,204,.14)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px 48px;margin-top:36px}
+.skills h3{font-size:1.05rem;color:var(--lav2);margin-bottom:4px}
+.feat{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:48px}
+.feat:nth-child(even) .shot{order:2}
+.shot{border-radius:var(--r);overflow:hidden;background:var(--ink);border:1px solid rgba(20,33,63,.15);aspect-ratio:21/10}
+.shot img{width:100%;height:100%;object-fit:cover}
+.ph{height:100%;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:22px;background:linear-gradient(135deg,var(--ink),var(--ink2));color:var(--on);font-size:.92rem}
+.ph b{font:700 2.6rem var(--hd);color:var(--sky)}.ph span{color:var(--lav2)}
+.kind{font-weight:600;font-size:.9rem;color:var(--lav)}
+.light .kind{color:#5E54A8}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.links .btn{padding:9px 18px;font-size:.95rem}
+.group{margin:56px 0 18px;font-size:1.4rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid rgba(20,33,63,.12);display:flex;flex-direction:column}
+.card .shot{border:0;border-radius:0}
+.card .in{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .links{margin-top:auto;padding-top:10px}
+.tl{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:18px}
+.tl li{padding:20px 22px;border-radius:var(--r);background:rgba(201,196,236,.07);border:1px solid rgba(201,196,236,.16)}
+.tl .kind{color:var(--sky)}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin-top:32px}
+.cert{background:var(--ink2);border-radius:var(--r);overflow:hidden;border:1px solid rgba(201,196,236,.16);display:flex;flex-direction:column}
+.cert img{aspect-ratio:4/3;width:100%;object-fit:cover;background:#fff}
+.cert div{padding:16px;display:flex;flex-direction:column;gap:4px;flex:1}.cert a{margin-top:auto;color:var(--sky);font-weight:600}
+.cert h3{font-size:1.02rem}.cert small{color:var(--mute)}
+dialog{width:min(920px,94vw);max-height:92vh;border:0;border-radius:22px;padding:0;background:var(--ivory);color:var(--onl)}
+dialog::backdrop{background:rgba(13,23,48,.75)}
+.dg{padding:32px}.dg h4{margin:22px 0 6px;font:700 1.05rem var(--hd)}
+.dg ul{margin:0;padding-left:20px}.x{float:right}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px}
+.gal img{border-radius:12px;border:1px solid rgba(20,33,63,.15);cursor:zoom-in}
+.met{display:flex;gap:16px;align-items:center;background:var(--ink);color:var(--on);padding:16px 20px;border-radius:14px;margin-top:14px}
+.met b{font:700 2.4rem var(--hd);color:var(--sky)}
+.pipe{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0;counter-reset:s}
+.pipe li{padding:8px 12px;border-radius:10px;background:rgba(143,134,204,.18);font-size:.9rem}
+.pipe li+li::before{content:"\2192\00a0"}
+#pv{width:100%;height:560px;border:1px solid rgba(20,33,63,.2);border-radius:var(--r);background:#fff;margin-top:20px}
+footer{padding:36px 0;background:var(--ink);color:var(--mute);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+#top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:0;background:var(--lav2);color:var(--ink);font-size:1.2rem;cursor:pointer;display:none}
+@media(max-width:860px){section{padding:64px 0}.hero .wrap,.grid2,.feat{grid-template-columns:1fr}.feat:nth-child(even) .shot{order:0}.arch{max-width:260px;order:-1}
+#menu{display:block}nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--ink);padding:16px 24px;gap:14px}nav ul.open{display:flex}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Main"><div class="wrap"><a class="logo" href="#home">Manikya K Uppar</a>
+<button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<ul id="nav"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<main id="main">
+<header class="hero" id="home"><div class="wrap">
+<div><h1>Manikya K Uppar</h1><p class="hl">Full-Stack Developer | Computer Science Engineering Undergraduate</p><p class="lead mute">I build full-stack web applications from first commit to live deployment: React frontends, Node.js and Express APIs, PostgreSQL and MongoDB data layers.</p>
+<div class="cta"><a class="btn pri" href="#projects">View my projects</a><a class="btn sec" href="assets/Manikya_K_Uppar_Resume.pdf" download>Download resume</a><a class="btn sec" id="ct" href="#contact">Contact me</a></div>
+<div class="soc"><a href="https://github.com/manikyauppar-gif" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/manikya-uppar-2819a0325" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:manikyauppar@gmail.com">Email</a></div></div>
+<div class="arch"><img src="assets/img/profile.jpg" alt="Portrait of Manikya K Uppar in a black blazer and white shirt" width="900" height="900" fetchpriority="high"></div>
+</div></header>
+
+<section class="light" id="about"><div class="wrap grid2">
+<div><h2>About</h2><p class="lead">I am a final-year Computer Science and Engineering undergraduate with a strong interest in full-stack development and building practical, scalable software applications. I have hands-on experience independently developing projects from scratch, working across application architecture, frontend development, backend implementation, and integrating technologies to solve real-world problems. I enjoy exploring new technologies, solving technical challenges, and transforming ideas into functional applications. I am currently looking for opportunities to begin my career as a Full-Stack Developer or Software Engineer, contribute to impactful engineering projects, and continuously grow as a technology professional.</p><p class="mute">Languages: Kannada, Hindi, English (all fluent)</p></div>
+<div id="education"><h2>Education</h2><div class="edu"><b>B.E. Computer Science and Engineering</b>Navkis College of Engineering, Hassan (VTU)<br><span class="mute">2023 – 2027 (expected). VTU 2022 Scheme. CGPA 7.6 up to 6th semester.</span></div><div class="edu"><b>Class XII (PUC)</b>Mangalore Public PU College, Hassan<br><span class="mute">2023. 86%</span></div><div class="edu"><b>Class X</b>Royal Apollo International School, Hassan<br><span class="mute">2021. 94%</span></div><p><b>Relevant coursework</b></p><ul class="chips"><li>Database Management Systems</li><li>Operating Systems</li><li>Computer Networks</li><li>Software Engineering</li><li>AI & Machine Learning Basics</li></ul></div></div></section>
+
+<section class="dark" id="skills"><div class="wrap"><h2>Technical skills</h2><p class="mute lead">Technologies from my resume, grouped by area.</p><div class="skills"><div><h3>Languages</h3><ul class="chips"><li>JavaScript (ES6+)</li><li>Python</li></ul></div><div><h3>Frontend</h3><ul class="chips"><li>React.js</li><li>HTML5</li><li>CSS3</li></ul></div><div><h3>Backend</h3><ul class="chips"><li>Node.js</li><li>Express.js</li><li>RESTful API Design</li><li>Socket.io</li><li>WebSockets</li><li>JWT Authentication</li><li>Role-Based Access Control (RBAC)</li><li>JSON Schema Validation (Joi)</li></ul></div><div><h3>Databases & ORMs</h3><ul class="chips"><li>SQL</li><li>PostgreSQL (Neon)</li><li>MySQL</li><li>MongoDB</li><li>Prisma ORM</li></ul></div><div><h3>AI / ML & Signal Processing</h3><ul class="chips"><li>PyTorch</li><li>Scikit-Learn</li><li>Librosa</li><li>Audio Signal Processing</li><li>LLM API Integration (OpenAI / Gemini)</li><li>Prompt Engineering</li><li>Retrieval-Augmented Generation (RAG)</li></ul></div><div><h3>Tools & Deployment</h3><ul class="chips"><li>Git</li><li>GitHub</li><li>Postman</li><li>Linux</li><li>VS Code</li><li>Vercel</li><li>Render</li><li>Railway</li></ul></div><div><h3>Web3 & Blockchain</h3><ul class="chips"><li>Solidity</li><li>Polygon</li><li>Ethers.js</li><li>MetaMask</li></ul></div></div></div></section>
+
+<section class="light" id="projects"><div class="wrap"><h2>Featured projects</h2><p class="mute lead">Two end-to-end builds I developed on my own, both deployed.</p><div id="fp"><article class="feat"><div class="shot"><div class="ph"><b>REST API</b><span>CRUD · Search · Pagination · Joi validation</span></div></div><div><span class="kind">Personal project · Solo</span><h3 style="font-size:1.8rem;margin:6px 0 10px">Employee Management REST API</h3><p>A production-style REST service for employee records with validation, search, filtering and pagination.</p><ul class="chips"><li>Node.js</li><li>Express.js</li><li>PostgreSQL (Neon)</li><li>Prisma ORM</li><li>Joi</li><li>Railway</li></ul><div class="links"><button class="btn pri" data-id="gupio">Details</button><a class="btn sec" href="https://github.com/manikyauppar-gif/gupio-employee-api" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://gupio-employee-api-production.up.railway.app" target="_blank" rel="noopener">Live demo</a></div></div></article><article class="feat"><div class="shot"><img src="assets/img/smartcollab-1.jpg" alt="SmartCollab landing screen showing real-time engine, RBAC and PostgreSQL" loading="lazy" width="1400" height="660"></div><div><span class="kind">Personal project · Solo</span><h3 style="font-size:1.8rem;margin:6px 0 10px">SmartCollab Workspace</h3><p>A real-time Kanban workspace where task changes appear instantly for every collaborator, with role-based access.</p><ul class="chips"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>Socket.io</li><li>PostgreSQL (Prisma ORM)</li><li>JWT</li><li>Vercel</li><li>Render</li></ul><div class="links"><button class="btn pri" data-id="smartcollab">Details</button><a class="btn sec" href="https://github.com/manikyauppar-gif/smartcollab-workspace" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://smartcollab-workspace.vercel.app" target="_blank" rel="noopener">Live demo</a></div></div></article></div>
+<h2 class="group" style="margin-top:72px">Complete project portfolio</h2><div class="cards"><article class="card"><div class="shot"><div class="ph"><b>REST API</b><span>CRUD · Search · Pagination · Joi validation</span></div></div><div class="in"><span class="kind">Personal project · Solo</span><h3>Employee Management REST API</h3><p class="mute" style="margin:0">A production-style REST service for employee records with validation, search, filtering and pagination.</p><div class="links"><button class="btn pri" data-id="gupio">Details</button><a class="btn sec" href="https://github.com/manikyauppar-gif/gupio-employee-api" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://gupio-employee-api-production.up.railway.app" target="_blank" rel="noopener">Live demo</a></div></div></article><article class="card"><div class="shot"><img src="assets/img/smartcollab-1.jpg" alt="SmartCollab landing screen showing real-time engine, RBAC and PostgreSQL" loading="lazy" width="1400" height="660"></div><div class="in"><span class="kind">Personal project · Solo</span><h3>SmartCollab Workspace</h3><p class="mute" style="margin:0">A real-time Kanban workspace where task changes appear instantly for every collaborator, with role-based access.</p><div class="links"><button class="btn pri" data-id="smartcollab">Details</button><a class="btn sec" href="https://github.com/manikyauppar-gif/smartcollab-workspace" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://smartcollab-workspace.vercel.app" target="_blank" rel="noopener">Live demo</a></div></div></article><article class="card"><div class="shot"><div class="ph"><b>95.6%</b><span>reported test accuracy of the final model</span></div></div><div class="in"><span class="kind">Major academic project</span><h3>Audio Forensic App to Detect Forgery</h3><p class="mute" style="margin:0">A web app that classifies a recording as authentic human speech or AI-generated speech and returns a certainty score.</p><div class="links"><button class="btn pri" data-id="audio">Details</button><span class="mute">Repository link coming soon.</span></div></div></article><article class="card"><div class="shot"><img src="assets/img/digiid-1.jpg" alt="DigiID home screen with Connect Wallet" loading="lazy" width="1400" height="660"></div><div class="in"><span class="kind">Hackathon project · Team</span><h3>DigiID: Web3 Digital Identity Wallet</h3><p class="mute" style="margin:0">A decentralized identity wallet prototype built in 24 hours at HACKLOOM 2.0.</p><div class="links"><button class="btn pri" data-id="digiid">Details</button><a class="btn sec" href="https://github.com/manikyauppar-gif/web3-identity-wallet" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://web3-identity-wallet.onrender.com" target="_blank" rel="noopener">Live demo</a></div></div></article><article class="card"><div class="shot"><img src="assets/img/leadflow-1.jpg" alt="LeadFlow dashboard with lead counts, search and pipeline table" loading="lazy" width="1400" height="660"></div><div class="in"><span class="kind">Personal project · Solo</span><h3>LeadFlow CRM</h3><p class="mute" style="margin:0">A client lead tracker with pipeline statuses, follow-up notes, search and CSV export.</p><div class="links"><button class="btn pri" data-id="leadflow">Details</button><a class="btn sec" href="https://github.com/manikyauppar-gif/client-lead-crm" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://manikyauppar-gif.github.io/client-lead-crm/" target="_blank" rel="noopener">Live demo</a></div></div></article><article class="card"><div class="shot"><div class="ph"><b>LMS</b><span>Node.js · Express.js · MongoDB</span></div></div><div class="in"><span class="kind">Mini academic project · Team</span><h3>Library Management System</h3><p class="mute" style="margin:0">A web portal that automates book circulation, member records and live catalog availability.</p><div class="links"><button class="btn pri" data-id="library">Details</button><span class="mute">Repository link coming soon.</span></div></div></article></div></div></section>
+
+<section class="dark2" id="experience"><div class="wrap"><h2>Experience and training</h2><p class="mute lead">Virtual job simulations, a hackathon and student leadership. No employment is claimed here.</p><ul class="tl"><li><span class="kind">Virtual job simulation</span><h3>JPMorgan Chase & Co. (via Forage): Software Engineering</h3><p class="mute" style="margin:6px 0 0">Project setup, Kafka integration, H2 database integration, and a REST API with controller. Completed 29 July 2026.</p></li><li><span class="kind">Virtual job simulation</span><h3>Tata Group (via Forage): GenAI Powered Data Analytics</h3><p class="mute" style="margin:6px 0 0">Exploratory data analysis and risk profiling, predicting delinquency with AI, and an AI-driven collections strategy. Completed 28 July 2026.</p></li><li><span class="kind">Virtual job simulation</span><h3>Deloitte (via Forage): Cyber Job Simulation</h3><p class="mute" style="margin:6px 0 0">Practical cyber security tasks. Completed 29 July 2026.</p></li><li><span class="kind">Hackathon</span><h3>HACKLOOM 2.0, Navkis College of Engineering</h3><p class="mute" style="margin:6px 0 0">24-hour hackathon, 27–28 April 2026. Co-built the DigiID Web3 identity wallet.</p></li><li><span class="kind">Leadership</span><h3>Department Event Coordinator, Navkis College of Engineering</h3><p class="mute" style="margin:6px 0 0">Led a 10-member student committee managing technical logistics, scheduling and stage operations for CSE symposiums with 400+ attendees.</p></li></ul></div></section>
+
+<section class="dark" id="certifications"><div class="wrap"><h2>Certifications</h2><p class="mute">Open any certificate to see the original file.</p><div class="certs"><div class="cert"><img src="assets/img/cert-jpmorgan.jpg" alt="Certificate preview: Software Engineering Job Simulation" loading="lazy"><div><h3>Software Engineering Job Simulation</h3><span>JPMorgan Chase & Co. via Forage</span><small>29 July 2026 · Enrolment code 45wiBmvSXXd7dv549</small><a href="assets/certs/jpmorgan.pdf" target="_blank" rel="noopener">View certificate</a></div></div><div class="cert"><img src="assets/img/cert-tata.jpg" alt="Certificate preview: GenAI Powered Data Analytics Job Simulation" loading="lazy"><div><h3>GenAI Powered Data Analytics Job Simulation</h3><span>Tata Group via Forage</span><small>28 July 2026 · Enrolment code 6a689cf10dffe53b136c333c</small><a href="assets/certs/tata.pdf" target="_blank" rel="noopener">View certificate</a></div></div><div class="cert"><img src="assets/img/cert-deloitte.jpg" alt="Certificate preview: Cyber Job Simulation" loading="lazy"><div><h3>Cyber Job Simulation</h3><span>Deloitte via Forage</span><small>29 July 2026 · Enrolment code 6a6a0b3f6b236f0c51770019</small><a href="assets/certs/deloitte.pdf" target="_blank" rel="noopener">View certificate</a></div></div><div class="cert"><img src="assets/img/cert-git.jpg" alt="Certificate preview: Git Training" loading="lazy"><div><h3>Git Training</h3><span>EduPyramids, SINE, IIT Bombay (Spoken Tutorial)</span><small>17 November 2026 · Score 86.67%. ID 4409680HKM</small><a href="assets/certs/git.pdf" target="_blank" rel="noopener">View certificate</a></div></div><div class="cert"><img src="assets/img/cert-latex.jpg" alt="Certificate preview: LaTeX Training" loading="lazy"><div><h3>LaTeX Training</h3><span>EduPyramids, SINE, IIT Bombay (Spoken Tutorial)</span><small>17 November 2026 · Score 75.00%. ID 440968085N</small><a href="assets/certs/latex.pdf" target="_blank" rel="noopener">View certificate</a></div></div><div class="cert"><img src="assets/img/hackloom.jpg" alt="Certificate preview: HACKLOOM 2.0 Participation" loading="lazy"><div><h3>HACKLOOM 2.0 Participation</h3><span>Terratech Club, Navkis College of Engineering</span><small>27–28 April 2026 · Participation certificate</small><a href="assets/certs/hackloom-2.jpeg" target="_blank" rel="noopener">View certificate</a></div></div></div></div></section>
+
+<section class="light" id="resume"><div class="wrap"><h2>Resume</h2><p class="mute lead">A one-page PDF with my education, skills, projects and experience.</p>
+<div class="links"><a class="btn pri" href="assets/Manikya_K_Uppar_Resume.pdf" download>Download resume (PDF)</a><button class="btn sec" id="pvb" aria-expanded="false">Preview</button></div><iframe id="pv" title="Resume preview" data-src="assets/Manikya_K_Uppar_Resume.pdf" hidden></iframe></div></section>
+
+<section class="dark2" id="contact"><div class="wrap"><h2>Contact</h2><p class="lead">I am looking for Full-Stack Developer and Software Engineer roles. The quickest way to reach me is email.</p>
+<div class="cta"><a class="btn pri" href="mailto:manikyauppar@gmail.com">manikyauppar@gmail.com</a><a class="btn sec" href="https://github.com/manikyauppar-gif" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://linkedin.com/in/manikya-uppar-2819a0325" target="_blank" rel="noopener">LinkedIn</a></div><p class="mute">Hassan, Karnataka, India</p></div></section>
+</main>
+<footer><div class="wrap"><span>&copy; 2026 Manikya K Uppar</span><span><a href="https://github.com/manikyauppar-gif">GitHub</a> · <a href="https://linkedin.com/in/manikya-uppar-2819a0325">LinkedIn</a> · <a href="mailto:manikyauppar@gmail.com">Email</a></span></div></footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+<dialog id="d-gupio" aria-label="Employee Management REST API details"><div class="dg"><button class="btn sec x cl">Close</button><span class="kind">Personal project · Solo</span><h3 style="font-size:1.8rem">Employee Management REST API</h3><ul class="chips"><li>Node.js</li><li>Express.js</li><li>PostgreSQL (Neon)</li><li>Prisma ORM</li><li>Joi</li><li>Railway</li></ul>
+
+<h4>Problem</h4><p>Teams need a dependable backend for creating, finding and maintaining employee records without malformed data reaching the database.</p><h4>My contribution</h4><p>Designed and built the whole service on my own: routes, Prisma schema, validation, error handling and deployment.</p><h4>Key features</h4><ul><li>Full CRUD operations on employee records</li><li>Multi-field search and filtering with pagination</li><li>Strict payload validation with Joi schemas</li><li>Standardized, modular JSON response and error structures</li><li>Cloud-hosted Neon PostgreSQL database</li><li>All endpoints verified with Postman; deployed on Railway</li></ul>
+
+<h4>Real-world use</h4><p>The same pattern backs HR tools, admin panels and any internal system that manages records through an API.</p>
+<h4>Screenshots</h4><div class="gal"><a href="assets/img/gupio-health.jpg" target="_blank" rel="noopener"><img src="assets/img/gupio-health.jpg" alt="Health endpoint of the deployed API returning status healthy" loading="lazy"></a></div>
+<div class="links"><a class="btn sec" href="https://github.com/manikyauppar-gif/gupio-employee-api" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://gupio-employee-api-production.up.railway.app" target="_blank" rel="noopener">Live demo</a></div></div></dialog>
+<dialog id="d-smartcollab" aria-label="SmartCollab Workspace details"><div class="dg"><button class="btn sec x cl">Close</button><span class="kind">Personal project · Solo</span><h3 style="font-size:1.8rem">SmartCollab Workspace</h3><ul class="chips"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>Socket.io</li><li>PostgreSQL (Prisma ORM)</li><li>JWT</li><li>Vercel</li><li>Render</li></ul>
+
+<h4>Problem</h4><p>Small teams lose time refreshing boards and asking who can change what. They need live updates and clear permissions in one lightweight tool.</p><h4>My contribution</h4><p>Built the frontend, backend, real-time layer, database schema, authentication and deployment myself.</p><h4>Key features</h4><ul><li>Live task synchronization over Socket.io</li><li>JWT authentication with Admin, Editor and Viewer roles (RBAC)</li><li>Activity tracking per workspace</li><li>REST and WebSocket endpoints on a relational Prisma schema (User, Workspace, Task)</li><li>LLM API hooks that generate concise task summaries and action items</li><li>Frontend on Vercel, backend on Render</li></ul>
+
+<h4>Real-world use</h4><p>Project boards for student teams, startups and any group that needs shared, permissioned task tracking.</p><p class="mute"><em>The backend runs on a free tier, so the first request after a quiet period can take a moment.</em></p>
+<h4>Screenshots</h4><div class="gal"><a href="assets/img/smartcollab-1.jpg" target="_blank" rel="noopener"><img src="assets/img/smartcollab-1.jpg" alt="SmartCollab landing screen showing real-time engine, RBAC and PostgreSQL" loading="lazy"></a><a href="assets/img/smartcollab-2.jpg" target="_blank" rel="noopener"><img src="assets/img/smartcollab-2.jpg" alt="SmartCollab Kanban board with To Do, In Progress and Completed columns" loading="lazy"></a></div>
+<div class="links"><a class="btn sec" href="https://github.com/manikyauppar-gif/smartcollab-workspace" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://smartcollab-workspace.vercel.app" target="_blank" rel="noopener">Live demo</a></div></div></dialog>
+<dialog id="d-audio" aria-label="Audio Forensic App to Detect Forgery details"><div class="dg"><button class="btn sec x cl">Close</button><span class="kind">Major academic project</span><h3 style="font-size:1.8rem">Audio Forensic App to Detect Forgery</h3><ul class="chips"><li>Python</li><li>Flask</li><li>PyTorch</li><li>Wav2Vec 2.0</li><li>Scikit-Learn</li><li>Librosa</li><li>React.js</li><li>Tailwind CSS</li><li>MongoDB Atlas</li></ul>
+<div class="met"><b>95.6%</b><span>reported test accuracy of the final model, on the 15% held-out test split (overall accuracy). Per-class precision, recall and F1 are not yet reported.</span></div>
+<h4>Problem</h4><p>Synthetic voices are now hard to tell from real ones, which creates risks of fraud, identity theft and misinformation. The app gives a moderator or an everyday user a quick real-versus-synthetic check.</p><h4>My contribution</h4><p>I built the backend and handled the deployment.</p><h4>Key features</h4><ul><li>Upload a file or record from the browser microphone</li><li>Flask REST API (POST /api/analyze) serving PyTorch and scikit-learn inference</li><li>Frozen, pre-trained facebook/wav2vec2-base embeddings feeding a balanced Random Forest (100 trees)</li><li>Privacy by design: the audio file is deleted after analysis, only metadata is stored</li><li>Dashboard with scan history and CSV export</li><li>Trained on public Kaggle datasets plus codec-augmented and browser-recorded samples</li></ul>
+<h4>How it works</h4><ol class="pipe"><li>Upload or record (WAV, MP3, WebM, OGG)</li><li>Mono, 16 kHz, silence trimmed, first 4 s</li><li>Wav2Vec 2.0 embedding (768 values)</li><li>Scaler + Random Forest</li><li>Verdict + certainty %</li></ol>
+<h4>Model development</h4><p>Earlier experiments included MFCC with Random Forest and Wav2Vec 2.0 with Logistic Regression or an MLP. They used different corpora and test splits, so the scores are not directly comparable.</p><h4>Real-world use</h4><p>Screening voice messages and recordings for synthetic speech before they are trusted.</p><p class="mute"><em>Known limitation: audio recorded in the browser is less reliable than clean uploads.</em></p>
+
+<div class="links"><span class="mute">Repository link coming soon.</span></div></div></dialog>
+<dialog id="d-digiid" aria-label="DigiID: Web3 Digital Identity Wallet details"><div class="dg"><button class="btn sec x cl">Close</button><span class="kind">Hackathon project · Team</span><h3 style="font-size:1.8rem">DigiID: Web3 Digital Identity Wallet</h3><ul class="chips"><li>Solidity</li><li>Polygon</li><li>Ethers.js</li><li>MetaMask</li><li>Node.js</li><li>MongoDB</li></ul>
+
+<h4>Problem</h4><p>Identity documents sit in central databases that can be breached. A wallet the holder controls lets them share credentials without handing over everything.</p><h4>My contribution</h4><p>Co-built with teammates during the 24-hour hackathon (HACKLOOM 2.0, April 2026).</p><h4>Key features</h4><ul><li>MetaMask wallet connection</li><li>Smart contracts written in Solidity for Polygon, accessed with Ethers.js</li><li>Institution-side flow for issuing a credential to a wallet address</li><li>Four-step flow: connect, receive credentials, generate proof, share and verify</li></ul>
+
+<h4>Real-world use</h4><p>Verifiable digital credentials for universities and employers.</p><p class="mute"><em>A hackathon prototype. The hosted demo runs on a free tier and may take a moment to wake.</em></p>
+<h4>Screenshots</h4><div class="gal"><a href="assets/img/digiid-1.jpg" target="_blank" rel="noopener"><img src="assets/img/digiid-1.jpg" alt="DigiID home screen with Connect Wallet" loading="lazy"></a><a href="assets/img/digiid-2.jpg" target="_blank" rel="noopener"><img src="assets/img/digiid-2.jpg" alt="DigiID feature cards" loading="lazy"></a><a href="assets/img/digiid-3.jpg" target="_blank" rel="noopener"><img src="assets/img/digiid-3.jpg" alt="DigiID four-step How it Works section" loading="lazy"></a><a href="assets/img/digiid-4.jpg" target="_blank" rel="noopener"><img src="assets/img/digiid-4.jpg" alt="DigiID Issue Test Credential dialog" loading="lazy"></a></div>
+<div class="links"><a class="btn sec" href="https://github.com/manikyauppar-gif/web3-identity-wallet" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://web3-identity-wallet.onrender.com" target="_blank" rel="noopener">Live demo</a></div></div></dialog>
+<dialog id="d-leadflow" aria-label="LeadFlow CRM details"><div class="dg"><button class="btn sec x cl">Close</button><span class="kind">Personal project · Solo</span><h3 style="font-size:1.8rem">LeadFlow CRM</h3><ul class="chips"><li>Web app</li><li>GitHub Pages</li></ul>
+
+<h4>Problem</h4><p>Freelancers and small agencies track leads in scattered messages and sheets. They need one place to see who is new, contacted or converted.</p><h4>My contribution</h4><p>Designed and built it on my own.</p><h4>Key features</h4><ul><li>Add, edit and delete leads with a source (website form, LinkedIn, direct email, referral)</li><li>Pipeline status: New, Contacted, Converted</li><li>Summary counts, search and status filters</li><li>Follow-up notes for every lead</li><li>CSV export</li></ul>
+
+<h4>Real-world use</h4><p>Lightweight sales follow-up for freelancers and small teams.</p>
+<h4>Screenshots</h4><div class="gal"><a href="assets/img/leadflow-1.jpg" target="_blank" rel="noopener"><img src="assets/img/leadflow-1.jpg" alt="LeadFlow dashboard with lead counts, search and pipeline table" loading="lazy"></a><a href="assets/img/leadflow-2.jpg" target="_blank" rel="noopener"><img src="assets/img/leadflow-2.jpg" alt="LeadFlow Add New Client Lead form" loading="lazy"></a></div>
+<div class="links"><a class="btn sec" href="https://github.com/manikyauppar-gif/client-lead-crm" target="_blank" rel="noopener">GitHub</a><a class="btn sec" href="https://manikyauppar-gif.github.io/client-lead-crm/" target="_blank" rel="noopener">Live demo</a></div></div></dialog>
+<dialog id="d-library" aria-label="Library Management System details"><div class="dg"><button class="btn sec x cl">Close</button><span class="kind">Mini academic project · Team</span><h3 style="font-size:1.8rem">Library Management System</h3><ul class="chips"><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>HTML5</li><li>CSS3</li></ul>
+
+<h4>Problem</h4><p>Manual registers make it slow to see which books are available and who has them.</p><h4>My contribution</h4><p>Team mini project at Navkis College of Engineering.</p><h4>Key features</h4><ul><li>Book circulation and member records</li><li>Transaction history</li><li>Live catalog availability backed by MongoDB</li></ul>
+
+<h4>Real-world use</h4><p>College and community libraries replacing paper registers.</p>
+
+<div class="links"><span class="mute">Repository link coming soon.</span></div></div></dialog>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
